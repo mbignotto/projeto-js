@@ -109,7 +109,7 @@ form button{
     /* PREENCHIMENTO */
     padding: 8px/* encima+embaixo */ 16px/* esquerda+direita */;
     
-    /* BORDAS */
+    /* BORDAS  */
     border-radius: 4px;
     border: 1px #ffffff88 solid;
 
@@ -128,7 +128,7 @@ form button{
 }
 
 
-/* MAIN */
+/* MAINS */
 
 main .donors{
     display: grid;
