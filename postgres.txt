@@ -1,0 +1,10 @@
+-- inserir dados no banco de dados.
+INSERT INTO "donors" ("name", "email", "blood")
+VALUES ('Robson Marques','robson@gmail.com','A+');
+
+-- buscar os dados
+SELECT *
+FROM "donors";
+
+-- conectar node com banco de dados
+npm install pg

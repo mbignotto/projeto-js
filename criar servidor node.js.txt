@@ -1,0 +1,8 @@
+pwd / conferir qual pasta está
+npm init -y / criar o arquivo json
+npm instal express / instalar framework express(criar o servidor)
+
+--------------------------------------------------------------------------------------
+
+npm install nodemon / reiniciar o servidor auto
+npm install nunjucks / conseguir usar no index.html variaveis,etc (template engine)

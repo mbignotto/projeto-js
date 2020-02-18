@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doe sangue! Doe vida!</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
 </head>
 
@@ -14,7 +14,7 @@
     <header>
         <img
             class="logo"
-         src="logo.png"
+         src="/logo.png"
          alt="Imagem de DOE">
         <h2>A sua doação importa</h2>
         <p>Até 3 vidas com 1 doação</p>
@@ -25,7 +25,7 @@
 
     <section class="form hide">
         <h2>Entre na lista de doadores</h2>
-        <form action="/">
+        <form action="/" method="POST">
             <input
                 type="text"
                 name="name"
@@ -49,32 +49,22 @@
         <h2>Últimos <span>doadores</span></h2>
 
         <section class="donors">
-            <div class="donor">
-                <div class="blood">AB+</div>
-                <p>Guilherme Soares</p>
-            </div>
-            
-            <div class="donor">
-                <div class="blood">B+</div>
-                <p>Carlos Henrique</p>
-            </div>
+
+            <!--estrutura de repeticao-->
+            {% for donor in donors %}
 
             <div class="donor">
-                <div class="blood">A+</div>
-                <p>Beatriz Pereira</p>
+                <div class="blood">{{donor.blood}}</div>
+                <p>{{donor.name}}</p>
             </div>
 
-            <div class="donor">
-                <div class="blood">O+</div>
-                <p>Gabriel Astolfo</p>
-            </div>
-
+            {%endfor%}
         </section>
     </main>
 
     <footer> Com ❤️ Matheus Bignotto</footer>
     
-    <script src="scripts.js"></script>
+    <script src="/scripts.js"></script>
 </body>
 
 </html>
